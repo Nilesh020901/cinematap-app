@@ -6,6 +6,9 @@ import { Movies } from "./pages/Movies";
 import "./App.css";
 import { AppLayout } from "./components/layout/AppLayout";
 import { ErrorPage } from "./pages/ErrorPage";
+import { getMoviesData } from "./api/GetAPIData";
+import { MovieDetails } from "./components/UI/MovieDetails";
+import { getMoviesDetails } from "./api/GetMoviesDetails";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +27,12 @@ const router = createBrowserRouter([
     {
       path: "/movies",
       element: <Movies />,
+      loader: getMoviesData,
+    },
+    {
+      path: "/movie/:movieID",
+      element: <MovieDetails />,
+      loader: getMoviesDetails,
     },
     {
       path: "/contact",

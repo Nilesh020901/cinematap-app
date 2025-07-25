@@ -223,6 +223,7 @@ textarea:focus-visible {
 .section-navbar {
   width: 100%;
   box-shadow: #0000000d 0 6px 24px, #00000014 0 0 0 1px;
+  border-radius: 5px;
 }
 
 .section-navbar .container {
@@ -300,6 +301,7 @@ main {
       #323d47,
       #49525b,
       #606870);
+  border-radius: 5px;
 }
 
 .custom-shape-divider-bottom-1696038172 {
@@ -407,9 +409,10 @@ main .section-hero {
 .movie {
   /* max-width: 100%; */
   width: 60rem;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   box-shadow: 0 5px 20px 10px rgba(0, 0, 0, 0.2);
+
   /* overflow: hidden; */
 }
 
@@ -420,6 +423,7 @@ main .section-hero {
 .movie__img {
   width: 100%;
   display: block;
+  border-radius: 10px;
 }
 
 .movie__content {
@@ -441,6 +445,7 @@ main .section-hero {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
 }
 
 .movie__title {
@@ -519,6 +524,7 @@ main .section-hero {
   width: 100%;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -561,6 +567,7 @@ textarea {
   padding: 1.4rem 2.4rem;
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
+  border-radius: 5px;
 }
 
 .btn-submit {
@@ -591,6 +598,14 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.contact_image:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
 }
 
 footer {
@@ -775,6 +790,7 @@ footer {
   padding: 60px 20px;
   font-family: 'Segoe UI', 'Roboto', sans-serif;
   min-height: 100vh;
+  border-radius: 5px;
 }
 
 .about-page .container {

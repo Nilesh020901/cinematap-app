@@ -4,7 +4,7 @@ import "../../App.css";
 export const Header = () => {
     const getNavLinkStyle = ({ isActive }) => {
         return {
-            color: isActive ? "green" : "black",
+            color: isActive ? "#535bf2" : "black",
         };
     };
 
@@ -25,7 +25,7 @@ export const Header = () => {
 
                 <div className="container">
                     <div className="navbar-brand">
-                        <NavLink to="index">
+                        <NavLink to="/">
                             <img src="/ct-logo1.png" alt="ct-logo1" className="site-logo" />
                         </NavLink>
                     </div>
